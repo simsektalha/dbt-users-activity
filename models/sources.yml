@@ -1,0 +1,39 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Raw user activity data from BigQuery"
+    database: gen-lang-client-0879571644
+    schema: case2
+    tables:
+      - name: user_activity
+        description: "User-level daily metrics from the gaming application"
+        columns:
+          - name: user_id
+            description: "Unique user identifier"
+          - name: event_date
+            description: "The day activity occurred"
+          - name: platform
+            description: "Platform (android/ios)"
+          - name: install_date
+            description: "When the user installed the game"
+          - name: country
+            description: "User's country (may be empty)"
+          - name: total_session_count
+            description: "Total number of sessions at that day"
+          - name: total_session_duration
+            description: "The total time the player spent at that day (in minutes)"
+          - name: match_start_count
+            description: "Total number of match started"
+          - name: match_end_count
+            description: "Total number of match finished"
+          - name: victory_count
+            description: "Total number of matches won"
+          - name: defeat_count
+            description: "Total number of matches defeated"
+          - name: server_connection_error
+            description: "Count of server failures"
+          - name: iap_revenue
+            description: "Total in app revenue"
+          - name: ad_revenue
+            description: "Total ad revenue"

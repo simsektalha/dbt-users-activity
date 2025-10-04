@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: daily_metrics
+    description: "Daily aggregated metrics by event_date, country, and platform"
+    columns:
+      - name: event_date
+        description: "Date of activity"
+      - name: country
+        description: "User's country (Unknown if not specified)"
+      - name: platform
+        description: "User's platform (ANDROID, IOS)"
+      - name: dau
+        description: "Daily Active Users"
+      - name: total_iap_revenue
+        description: "Sum of in-app purchase revenue"
+      - name: total_ad_revenue
+        description: "Sum of ad revenue"
+      - name: arpdau
+        description: "Average revenue per daily active user (IAP + AD / DAU)"
+      - name: matches_started
+        description: "Sum of matches started"
+      - name: match_per_dau
+        description: "Average matches started per DAU"
+      - name: win_ratio
+        description: "Ratio of victories to matches ended"
+      - name: defeat_ratio
+        description: "Ratio of defeats to matches ended"
+      - name: server_error_per_dau
+        description: "Server connection errors per DAU"

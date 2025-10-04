@@ -1,0 +1,10 @@
+dbt_users_activity:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: gen-lang-client-0879571644
+      dataset: case2
+      keyfile: gen-lang-client-0879571644-07ab5d8ee5b2.json
+      threads: 1
