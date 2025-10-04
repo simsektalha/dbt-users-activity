@@ -3,8 +3,8 @@ version: 2
 sources:
   - name: raw_data
     description: "Raw user activity data from BigQuery"
-    database: gen-lang-client-0879571644
-    schema: case2
+    database: your-project-id
+    schema: your_dataset
     tables:
       - name: user_activity
         description: "User-level daily metrics from the gaming application"

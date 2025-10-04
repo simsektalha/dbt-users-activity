@@ -4,7 +4,7 @@ dbt_users_activity:
     dev:
       type: bigquery
       method: service-account
-      project: gen-lang-client-0879571644
-      dataset: case2
-      keyfile: gen-lang-client-0879571644-07ab5d8ee5b2.json
+      project: your-project-id
+      dataset: your_dataset
+      keyfile: path/to/your-service-account.json
       threads: 1
